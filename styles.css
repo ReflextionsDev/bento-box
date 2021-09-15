@@ -1,27 +1,34 @@
 main {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "fish-flag vase-short"
+    "map vase-short"
+    "vase-tall bamboo"
+    "vase-tall quadropus";
 }
 
-.fish-flag{
-
+#fish-flag{
+    grid-area: fish-flag;
 }
 
-.map{
-
+#map{
+    grid-area: map;
 }
 
-.vase-short{
-
+#vase-short{
+    grid-area: vase-short;
 }
 
-.vase-tall{
-
+#vase-tall{
+    grid-area: vase-tall;
 }
 
-.bamboo{
-
+#bamboo{
+    grid-area: bamboo;
 }
 
-.quadropus{
-    
+#quadropus{
+    grid-area: quadropus;
 }
